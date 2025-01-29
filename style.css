@@ -1,9 +1,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face {
+    font-family: dinround;
+    src: url(Fonts/dinroundpro_bold.otf);
+}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: dinround;
+    
 }
 
 
@@ -21,7 +28,7 @@
     /* background-color: blueviolet; */
     display: flex;
     align-items: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid rgba(175, 175, 175, 0.4);
 
 }
 
@@ -65,12 +72,13 @@
 .navbar-text{
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: .8px;
     text-transform: uppercase;
-    color: gray ;
     justify-content: end;
+    font-family: dinround,sans-serif;
+
 
 }
 
@@ -81,11 +89,83 @@
 }
 
 
+/* Header content */
+
+.header-content-container{
+    width: 100%;
+    height: 626px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 
 
 
+.header-content-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+img{
+    width: 424px;
+    height: 424px;
+}
+}
 
-/* Main */
+.header-content-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+h1{
+    font-size: 32px;
+    text-align: center;
+    color: #4B4B4B;
+}
+}
+
+
+
+.header-content-buttons{
+    width: 330PX;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+
+@media (max-width:992px){
+    .header-content-image{
+        height: 50%;
+    img{
+        width: 324px;
+        height: 324px;
+    }
+    }
+    .header-content-text{
+        height: 50%;
+    }
+    .header-content-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Main Content */
 
 
 
